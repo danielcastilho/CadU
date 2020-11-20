@@ -12,3 +12,4 @@ Prócimoes passos:
 - Utilização de banco relacional
 - API para CRUD
 - Criação de client simples para CRUD baseado em Angular
+- Adicionar arquivos para configuração e implementação de ambiente docker
