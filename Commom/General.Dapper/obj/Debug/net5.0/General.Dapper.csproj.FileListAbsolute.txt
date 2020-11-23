@@ -1,0 +1,15 @@
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/bin/Debug/net5.0/General.Dapper.deps.json
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/bin/Debug/net5.0/General.Dapper.dll
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/bin/Debug/net5.0/ref/General.Dapper.dll
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/bin/Debug/net5.0/General.Dapper.pdb
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/bin/Debug/net5.0/General.dll
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/bin/Debug/net5.0/General.pdb
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.csprojAssemblyReference.cache
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.GeneratedMSBuildEditorConfig.editorconfig
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.AssemblyInfoInputs.cache
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.AssemblyInfo.cs
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.csproj.CoreCompileInputs.cache
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.csproj.CopyComplete
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.dll
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/ref/General.Dapper.dll
+/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.pdb

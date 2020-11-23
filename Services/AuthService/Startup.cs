@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CadU.AuthLibrary.Settings;
 using CadU.Interfaces.Auth;
 using CadU.Services;
 using CadU.Tests.Fakes;
@@ -35,6 +36,7 @@ namespace CadU
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddHttpContextAccessor();
+
       //services.AddSingleton<Interfaces.Auth.IAuthenticationService, FakeAuthenticationService>();
       services.AddSingleton<Interfaces.Auth.IAuthenticationService, JwtIdentityAuthenticationService>();
       services.AddSingleton<ILoggedUserService, IdentityLoggedUserService>();
@@ -42,12 +44,19 @@ namespace CadU
 
 
       services.AddControllers();
+      services.AddCors();
       services.AddSwaggerGen(c =>
       {
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "CadU", Version = "v1" });
       });
 
-      var key = Encoding.ASCII.GetBytes(Settings.Secret);
+      // configure strongly typed settings objects
+      var appSettingsSection = Configuration.GetSection("AppSettings");
+      services.Configure<AppSettings>(appSettingsSection);
+
+      // configure jwt authentication
+      var appSettings = appSettingsSection.Get<AppSettings>();
+      var key = Encoding.ASCII.GetBytes(appSettings.Secret);
 
       services.AddAuthentication(opt =>
       {
@@ -58,14 +67,14 @@ namespace CadU
         opt.RequireHttpsMetadata = false;
         opt.SaveToken = true;
         opt.TokenValidationParameters.IssuerSigningKey = new SymmetricSecurityKey(key);
-        opt.TokenValidationParameters.ValidAudience = "FSL";
-        opt.TokenValidationParameters.ValidIssuer = "FSL";
+        opt.TokenValidationParameters.ValidateAudience = false;
+        opt.TokenValidationParameters.ValidateIssuer = false;
         opt.TokenValidationParameters.ValidateIssuerSigningKey = true;
         opt.TokenValidationParameters.ValidateLifetime = true;
         opt.TokenValidationParameters.ClockSkew = TimeSpan.Zero;
       });
 
-      services.AddAuthorization(auth => 
+      services.AddAuthorization(auth =>
       {
         auth.AddPolicy("Bearer", new AuthorizationPolicyBuilder()
           .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
@@ -88,10 +97,10 @@ namespace CadU
 
       app.UseRouting();
 
-            app.UseCors(x => x
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader());
+      app.UseCors(x => x
+          .AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader());
 
       app.UseAuthentication();
       app.UseAuthorization();

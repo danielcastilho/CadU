@@ -5,7 +5,8 @@ using CadU.Interfaces.Auth;
 using CadU.Interfaces.Base;
 using Microsoft.AspNetCore.Http;
 using CadU.Infrastructure.Utils;
-using CadU.Models;
+using CadU.AuthLibrary.Models;
+using CadU.AuthLibrary.Entities;
 
 namespace CadU.Services
 {

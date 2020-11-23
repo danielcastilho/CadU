@@ -9,21 +9,23 @@ using CadU.Implementation.Auth;
 using CadU.Interfaces.Auth;
 using Microsoft.IdentityModel.Tokens;
 using CadU.Infrastructure.Utils;
-using CadU.Models;
+using CadU.AuthLibrary.Entities;
+using Microsoft.Extensions.Options;
+using CadU.AuthLibrary.Settings;
 
 namespace CadU.Services
 {
   public sealed class JwtIdentityAuthenticationService : IAuthenticationService
   {
-
-    public JwtIdentityAuthenticationService()
-    {
+    private readonly AppSettings _appSettings;
+    public JwtIdentityAuthenticationService(IOptions<AppSettings> appSettings)
+    { _appSettings = appSettings.Value;
     }
 
     public async Task<IAuthenticationResult> AuthenticateAsync(
         User user)
     {
-      var key = Encoding.ASCII.GetBytes(Settings.Secret);
+      var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
       var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString("N")),

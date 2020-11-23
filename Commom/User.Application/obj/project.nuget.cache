@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "im1Bj1DrCHduMvg4/GPMk326jn/BKM2efKx9qkRhNcJC8rw5XknOOLO2gs/r9kDJ/nBV7J7mSdoqJczimOZZ/A==",
+  "success": true,
+  "projectFilePath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj",
+  "expectedPackageFiles": [
+    "/home/daniel/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
+    "/home/daniel/.nuget/packages/dapper.contrib/2.0.78/dapper.contrib.2.0.78.nupkg.sha512",
+    "/home/daniel/.nuget/packages/npgsql/5.0.0/npgsql.5.0.0.nupkg.sha512",
+    "/home/daniel/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

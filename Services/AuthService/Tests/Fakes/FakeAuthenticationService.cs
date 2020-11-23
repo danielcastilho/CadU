@@ -2,7 +2,7 @@ using System;
 using System.Threading.Tasks;
 using CadU.Implementation.Auth;
 using CadU.Interfaces.Auth;
-using CadU.Models;
+using CadU.AuthLibrary.Entities;
 
 namespace CadU.Tests.Fakes
 {

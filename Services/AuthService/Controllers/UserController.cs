@@ -2,7 +2,8 @@ using CadU.Interfaces.Auth;
 
 namespace CadU.Controllers
 {
-  using CadU.Models;
+  using CadU.AuthLibrary.Entities;
+  using CadU.AuthLibrary.Models;
   using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using CadU.Interfaces.Auth;
-using CadU.Models;
+using CadU.AuthLibrary.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +24,7 @@ public sealed class LoginController : ControllerBase
     [AllowAnonymous]
     [HttpPost]
     public async Task<IActionResult> PostAsync(
-        [FromBody] LoginUser loginUser)
+        [FromBody] LoginUserModel loginUser)
     {
         var authorization = await _authorizationService.AuthorizeAsync(loginUser);
         if (!authorization.Success)

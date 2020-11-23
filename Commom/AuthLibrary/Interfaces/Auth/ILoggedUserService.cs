@@ -1,5 +1,5 @@
 using CadU.Interfaces.Base;
-using CadU.Models;
+using CadU.AuthLibrary.Entities;
 
 namespace CadU.Interfaces.Auth
 {

@@ -1,16 +1,17 @@
 using System;
 using System.Threading.Tasks;
+using CadU.AuthLibrary.Entities;
 using CadU.Implementation.Base;
 using CadU.Interfaces.Auth;
 using CadU.Interfaces.Base;
-using CadU.Models;
+using CadU.AuthLibrary.Models;
 
 namespace CadU.Tests.Fakes
 {
   public sealed class FakeAuthorizationService : IAuthorizationService
   {
     public async Task<IBaseResult<User>> AuthorizeAsync(
-        LoginUser loginUser)
+        LoginUserModel loginUser)
     {
       var loginOrEmail = loginUser?.LoginOrEmail ?? "";
       var password = loginUser?.Password ?? "";
