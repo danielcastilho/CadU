@@ -9,9 +9,18 @@ _Em fase de desenvolvimento_:
 - Sistema de autenticação e autorização baseado em JWT
 - API para CRUD
 - Testes via Postman
+- Adição de testes unitários
+- Utilização de banco relacional Postgres
+- Script para rodar o postgres em docker (ele instala tambem o pgAdmin)
 
 ### Próximoes passos:
-- Adição de testes unitários e integração "CI"
-- Utilização de banco relacional
+- Maior cobertura de testes unitários e integração "CI"
 - Criação de client simples para CRUD baseado em Angular
-- Adicionar arquivos para configuração e implementação de ambiente docker
+- Adicionar arquivos para configuração e implementação de ambiente docker completo
+- Sistema de migrações para atualizações de versão
+
+## Para a criação do banco:
+Na raiz do projeto tem arquivos para instalar o postgres e criar o database
+- Executar o arquivo docker-env-dev-setup.sh se tiver o docker instalado ou instalar manualmente o servidor
+- Ajustar o arquivo appSettings.json se preferir usar login diferente
+- executar o arquivo createSchema.pgsql para criar o banco

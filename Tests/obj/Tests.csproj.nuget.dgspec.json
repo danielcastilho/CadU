@@ -4,14 +4,14 @@
     "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj": {}
   },
   "projects": {
-    "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj": {
+    "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj",
-        "projectName": "Tests",
-        "projectPath": "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj",
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj",
+        "projectName": "AuthLibrary",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj",
         "packagesPath": "/home/daniel/.nuget/packages/",
-        "outputPath": "/home/daniel/Desenvolvimento/CadU/Tests/obj/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/daniel/.nuget/NuGet/NuGet.Config"
@@ -38,9 +38,447 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj",
+        "projectName": "General.Dapper",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj",
+        "packagesPath": "/home/daniel/.nuget/packages/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Dapper.FastCrud": {
+              "target": "Package",
+              "version": "[2.5.0.39, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj",
+        "projectName": "General",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj",
+        "packagesPath": "/home/daniel/.nuget/packages/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Commom/General/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj",
+        "projectName": "User.Application",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj",
+        "packagesPath": "/home/daniel/.nuget/packages/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj",
+        "projectName": "User.Core",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj",
+        "packagesPath": "/home/daniel/.nuget/packages/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniel/Desenvolvimento/CadU/Services/UserServiceApi/UserServiceApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Services/UserServiceApi/UserServiceApi.csproj",
+        "projectName": "UserServiceApi",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Services/UserServiceApi/UserServiceApi.csproj",
+        "packagesPath": "/home/daniel/.nuget/packages/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Services/UserServiceApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General.Dapper/General.Dapper.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/General/General.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "/home/daniel/Desenvolvimento/CadU/Tests/Tests.csproj",
+        "packagesPath": "/home/daniel/.nuget/packages/",
+        "outputPath": "/home/daniel/Desenvolvimento/CadU/Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/daniel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/AuthLibrary.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Application/User.Application.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Commom/User.Core/User.Core.csproj"
+              },
+              "/home/daniel/Desenvolvimento/CadU/Services/UserServiceApi/UserServiceApi.csproj": {
+                "projectPath": "/home/daniel/Desenvolvimento/CadU/Services/UserServiceApi/UserServiceApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.1, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

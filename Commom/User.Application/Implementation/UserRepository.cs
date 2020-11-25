@@ -13,12 +13,6 @@ namespace CadU.User.Application.Implementation
     {
     }
 
-    static UserRepository()
-    {
-        CadU.User.Application.Mappers.EntitiesMap.Initialize();
-    }
-
-
     public async Task<Core.Entities.User> GetByEmailAsync(string email)
     {
       return await Connection.QueryFirstOrDefaultAsync<User.Core.Entities.User>(

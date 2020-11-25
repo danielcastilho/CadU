@@ -18,7 +18,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
-namespace UserService
+namespace UserServiceApi
 {
   public class Startup
   {

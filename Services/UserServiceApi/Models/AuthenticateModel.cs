@@ -1,4 +1,4 @@
-namespace CadU.UserService.Models
+namespace CadU.UserServiceApi.Models
 {
   public class AuthenticateModel
   {

@@ -2,7 +2,7 @@ using AutoMapper;
 using CadU.AuthLibrary.Models;
 using CadU.User.Models;
 
-namespace CadU.UserService.Helpers
+namespace CadU.UserServiceApi.Helpers
 {
   public class AutoMapperProfile : Profile
   {

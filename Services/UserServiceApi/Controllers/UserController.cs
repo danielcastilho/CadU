@@ -10,13 +10,13 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using CadU.User.Application.Interfaces;
 using CadU.AuthLibrary.Settings;
-using CadU.UserService.Models;
+using CadU.UserServiceApi.Models;
 using CadU.User.Models;
 using CadU.General.Infrastructure.Core;
 using CadU.AuthLibrary.Models;
 using System.Threading.Tasks;
 
-namespace CadU.UserService.Controllers
+namespace CadU.UserServiceApi.Controllers
 {
   [Authorize]
   [ApiController]
