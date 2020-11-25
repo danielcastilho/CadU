@@ -32,7 +32,7 @@ namespace UserService
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
-
+      services.AddMvc();
       services.AddControllers();
       services.AddCors();
       services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -61,16 +61,16 @@ namespace UserService
         {
           OnTokenValidated = context =>
                 {
-                var userService = context.HttpContext.RequestServices.GetRequiredService<IUserService>();
-                var userId = context.Principal.Identity.Name;
-                var user = userService.GetById(userId);
-                if (user == null)
-                {
-                        // return unauthorized if user no longer exists
-                        context.Fail("Unauthorized");
+                  var userService = context.HttpContext.RequestServices.GetRequiredService<IUserService>();
+                  var userId = context.Principal.Identity.Name;
+                  var user = userService.GetById(userId);
+                  if (user == null)
+                  {
+                    // return unauthorized if user no longer exists
+                    context.Fail("Unauthorized");
+                  }
+                  return Task.CompletedTask;
                 }
-                return Task.CompletedTask;
-              }
         };
         x.RequireHttpsMetadata = false;
         x.SaveToken = true;
@@ -96,13 +96,23 @@ namespace UserService
       // {
       app.UseDeveloperExceptionPage();
       app.UseSwagger();
-      app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "UserService v1"));
+      app.UseSwaggerUI(c =>
+      {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "UserService v1");
+        c.RoutePrefix = string.Empty;
+      });
       // }
 
       app.UseHttpsRedirection();
 
       app.UseRouting();
 
+      app.UseCors(x => x
+          .AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader());
+
+      app.UseAuthentication();
       app.UseAuthorization();
 
       app.UseEndpoints(endpoints =>

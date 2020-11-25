@@ -68,7 +68,7 @@ namespace CadU.UserService.Controllers
       // return basic user info and authentication token
       return Ok(new UserTokenModel
       {
-        Id = user.Id,
+        Id = user.Id.ToString(),
         Token = tokenString,
         Expiration = tokenDescriptor.Expires.Value
       });
@@ -76,16 +76,18 @@ namespace CadU.UserService.Controllers
 
     [AllowAnonymous]
     [HttpPost("register")]
-    public IActionResult Register([FromBody] UserModel model)
+    public async Task<IActionResult> Register([FromBody] UserModel model)
     {
+
       // map model to entity
       var user = _mapper.Map<CadU.User.Core.Entities.User>(model);
 
       try
       {
         // create user
-        _userService.Create(user, model.Password);
-        return Ok();
+        user = await _userService.Create(user, model.Password);
+        var result = _mapper.Map<UserModel>(user);
+        return Ok(result);
       }
       catch (AppException ex)
       {
@@ -103,9 +105,9 @@ namespace CadU.UserService.Controllers
     }
 
     [HttpGet("{id}")]
-    public IActionResult GetById(string id)
+    public async Task<IActionResult> GetById(string id)
     {
-      var user = _userService.GetById(id);
+      var user = await _userService.GetById(id);
       var model = _mapper.Map<UserModel>(user);
       return Ok(model);
     }
@@ -115,7 +117,7 @@ namespace CadU.UserService.Controllers
     {
       // map model to entity and set id
       var user = _mapper.Map<CadU.User.Core.Entities.User>(model);
-      user.Id = id;
+      user.Id = Guid.Parse(id);
 
       try
       {

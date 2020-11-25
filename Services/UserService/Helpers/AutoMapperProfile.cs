@@ -1,5 +1,6 @@
 using AutoMapper;
 using CadU.AuthLibrary.Models;
+using CadU.User.Models;
 
 namespace CadU.UserService.Helpers
 {
@@ -8,8 +9,10 @@ namespace CadU.UserService.Helpers
     public AutoMapperProfile()
     {
       CreateMap<User.Core.Entities.User, LoginUserModel>();
-    //   CreateMap<RegisterModel, User>();
-    //   CreateMap<UpdateModel, User>();
+      CreateMap<LoginUserModel, User.Core.Entities.User>();
+      CreateMap<User.Core.Entities.User, UserModel>();
+      CreateMap<UserModel, User.Core.Entities.User>();
+
     }
   }
 }

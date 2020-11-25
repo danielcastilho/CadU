@@ -2,7 +2,6 @@
 /home/daniel/Desenvolvimento/CadU/Commom/General/bin/Debug/net5.0/General.dll
 /home/daniel/Desenvolvimento/CadU/Commom/General/bin/Debug/net5.0/ref/General.dll
 /home/daniel/Desenvolvimento/CadU/Commom/General/bin/Debug/net5.0/General.pdb
-/home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.csprojAssemblyReference.cache
 /home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.GeneratedMSBuildEditorConfig.editorconfig
 /home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.AssemblyInfoInputs.cache
 /home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.AssemblyInfo.cs
@@ -10,3 +9,4 @@
 /home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.dll
 /home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/ref/General.dll
 /home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.pdb
+/home/daniel/Desenvolvimento/CadU/Commom/General/obj/Debug/net5.0/General.csprojAssemblyReference.cache

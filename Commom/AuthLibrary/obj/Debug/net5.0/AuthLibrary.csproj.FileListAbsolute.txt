@@ -2,7 +2,6 @@
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/bin/Debug/net5.0/AuthLibrary.dll
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/bin/Debug/net5.0/ref/AuthLibrary.dll
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/bin/Debug/net5.0/AuthLibrary.pdb
-/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.csprojAssemblyReference.cache
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.GeneratedMSBuildEditorConfig.editorconfig
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.AssemblyInfoInputs.cache
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.AssemblyInfo.cs
@@ -10,3 +9,4 @@
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.dll
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/ref/AuthLibrary.dll
 /home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.pdb
+/home/daniel/Desenvolvimento/CadU/Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.csprojAssemblyReference.cache

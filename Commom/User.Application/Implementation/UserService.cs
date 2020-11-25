@@ -2,6 +2,7 @@
 
 namespace CadU.User.Application.Implementation
 {
+  using System;
   using System.Collections.Generic;
   using System.Threading.Tasks;
   using CadU.General.Infrastructure.Core;
@@ -41,7 +42,7 @@ namespace CadU.User.Application.Implementation
 
     public async Task<User> GetById(string id)
     {
-      return await _userRepository.GetByIdAsync(id);
+      return await _userRepository.GetByIdAsync(Guid.Parse(id));
     }
 
     public async Task<User> Create(User user, string password)
@@ -53,6 +54,10 @@ namespace CadU.User.Application.Implementation
       if (await _userRepository.GetByEmailAsync(user.Email) != null)
         throw new AppException("Username \"" + user.Email + "\" is already taken");
 
+      if (user.Id == Guid.Empty)
+      {
+        user.Id = Guid.NewGuid();
+      }
       await _userRepository.AddAsync(user);
 
       return user;
@@ -95,7 +100,7 @@ namespace CadU.User.Application.Implementation
 
     public async void Delete(string id)
     {
-      var user = await _userRepository.GetByIdAsync(id);
+      var user = await _userRepository.GetByIdAsync(Guid.Parse(id));
       if (user != null)
       {
         await _userRepository.DeleteAsync(user);

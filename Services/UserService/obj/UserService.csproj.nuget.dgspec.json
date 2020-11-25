@@ -126,6 +126,10 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
+            "Dapper.FastCrud": {
+              "target": "Package",
+              "version": "[2.5.0.39, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -248,12 +252,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.0.78, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

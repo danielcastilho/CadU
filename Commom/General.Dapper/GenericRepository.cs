@@ -4,13 +4,16 @@ using CadU.General.Infrastructure.Core;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 using System.Linq;
-using Dapper;
-using Dapper.Contrib.Extensions;
 using System.Data;
+using System;
+using Dapper.FastCrud;
+using Dapper.FastCrud.Configuration;
+//using Dapper.Contrib.Extensions;
 
-namespace CadU.General.Dapper
+namespace CadU.General.DapperORM
 {
-  public class GenericRepository<T, K> : IGenericRepository<T, K> where T : class
+
+  public class GenericRepository<T, K> : IGenericRepository<T, K> where T : class, new()
   {
 
     private IConfiguration _configuration;
@@ -21,31 +24,44 @@ namespace CadU.General.Dapper
     {
       _configuration = configuration;
       _connection = new NpgsqlConnection(_configuration.GetConnectionString("CadU"));
-
     }
-    public async Task<int> AddAsync(T entity)
+    static GenericRepository()
     {
-      return await _connection.InsertAsync(entity);
+      //SqlMapperExtensions.TableNameMapper = (type) => $"\"{type.Name}\"";
+      OrmConfiguration.DefaultDialect = SqlDialect.PostgreSql;
+      OrmConfiguration.Conventions = new CadU.General.Dapper.Configurations.CadUOrmConvention();
     }
 
-    public async Task<bool> DeleteAsync(T entity)
+    /// <summary>
+    /// Add an entity in database
+    /// </summary>
+    /// <param name="entity"></param>
+    /// <returns></returns>
+    public virtual async Task<int> AddAsync(T entity)
+    {
+      await _connection.InsertAsync<T>(entity);
+      return 1;
+    }
+
+    public virtual async Task<bool> DeleteAsync(T entity)
     {
       return await _connection.DeleteAsync(entity);
     }
 
-    public async Task<IEnumerable<T>> GetAllAsync()
+    public virtual Task<IEnumerable<T>> GetAllAsync()
     {
-      return await _connection.GetAllAsync<T>();
+      return _connection.FindAsync<T>();
     }
 
-    public async Task<T> GetByIdAsync(K id)
+    public virtual async Task<T> GetByIdAsync(K id)
     {
-      return await _connection.GetAsync<T>(id);
+      return (await _connection.FindAsync<T>((x)=>x.Where($"Id=@Id").WithParameters(new {Id = id}).Top(1))).FirstOrDefault();
     }
 
-    public async Task<bool> UpdateAsync(T entity)
+    public virtual async Task<bool> UpdateAsync(T entity)
     {
       return await _connection.UpdateAsync(entity);
     }
+
   }
 }

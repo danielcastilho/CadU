@@ -1,3 +1,10 @@
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.csprojAssemblyReference.cache
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.GeneratedMSBuildEditorConfig.editorconfig
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.AssemblyInfoInputs.cache
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.AssemblyInfo.cs
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.csproj.CoreCompileInputs.cache
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.MvcApplicationPartsAssemblyInfo.cs
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.MvcApplicationPartsAssemblyInfo.cache
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/appsettings.Development.json
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/appsettings.json
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/UserService
@@ -7,6 +14,9 @@
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/UserService.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/ref/UserService.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/UserService.pdb
+/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/UserService.xml
+/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AutoMapper.dll
+/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/Dapper.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/Dapper.Contrib.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -22,6 +32,7 @@
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AuthLibrary.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/General.Dapper.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/General.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/User.Application.dll
@@ -30,13 +41,7 @@
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/General.Dapper.pdb
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/User.Core.pdb
 /home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/User.Application.pdb
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.csprojAssemblyReference.cache
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.GeneratedMSBuildEditorConfig.editorconfig
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.AssemblyInfoInputs.cache
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.AssemblyInfo.cs
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.csproj.CoreCompileInputs.cache
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.MvcApplicationPartsAssemblyInfo.cs
-/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.MvcApplicationPartsAssemblyInfo.cache
+/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AuthLibrary.pdb
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/staticwebassets/UserService.StaticWebAssets.Manifest.cache
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/staticwebassets/UserService.StaticWebAssets.xml
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/scopedcss/bundle/UserService.styles.css
@@ -44,9 +49,7 @@
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.csproj.CopyComplete
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.dll
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/ref/UserService.dll
+/home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.xml
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.pdb
 /home/daniel/Desenvolvimento/CadU/Services/UserService/obj/Debug/net5.0/UserService.genruntimeconfig.cache
-/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AutoMapper.dll
-/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AuthLibrary.dll
-/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/AuthLibrary.pdb
+/home/daniel/Desenvolvimento/CadU/Services/UserService/bin/Debug/net5.0/Dapper.FastCrud.dll
