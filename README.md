@@ -24,3 +24,8 @@ Na raiz do projeto tem arquivos para instalar o postgres e criar o database
 - Executar o arquivo docker-env-dev-setup.sh se tiver o docker instalado ou instalar manualmente o servidor
 - Ajustar o arquivo appSettings.json se preferir usar login diferente
 - executar o arquivo createSchema.pgsql para criar o banco
+
+
+---
+### Sobre mim
+>[Linkedin](https://www.linkedin.com/in/danielcastilho74/)
