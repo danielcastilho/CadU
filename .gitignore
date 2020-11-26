@@ -313,7 +313,7 @@ node_modules/
 _Pvt_Extensions
 
 # Cache
-.cache
+**/*.cache
 
 # Paket dependency manager
 .paket/paket.exe
@@ -375,3 +375,9 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 Services/UserService/obj/Debug/net5.0/UserService.csprojAssemblyReference.cache
+Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.csprojAssemblyReference.cache
+Commom/AuthLibrary/obj/Debug/net5.0/AuthLibrary.csprojAssemblyReference.cache
+Commom/General/obj/Debug/net5.0/General.csprojAssemblyReference.cache
+Commom/General.Dapper/obj/Debug/net5.0/General.Dapper.csprojAssemblyReference.cache
+Commom/User.Application/obj/Debug/net5.0/User.Application.csprojAssemblyReference.cache
+Commom/User.Core/obj/Debug/net5.0/User.Core.csprojAssemblyReference.cache
