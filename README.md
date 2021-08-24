@@ -1,6 +1,6 @@
 # CadU
 Sistema de Login e cadastro de Usuários
-O propósito deste projeto .Net core é para aprender e praticar nossas habilidades e conhecimentos na plataforma dotnet core/5 com Web-API, JWT e também clientes consumindo em Angular, Vue ou React.
+O propósito deste projeto .Net core é para aprender e praticar habilidades e conhecimentos na plataforma dotnet core/5 com Web-API, JWT e também clientes consumindo em Angular, Vue ou React.
 
 _Em fase de desenvolvimento_:
    isso será continuo, a idéia é sempre **melhorar**
